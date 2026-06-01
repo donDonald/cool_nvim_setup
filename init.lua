@@ -28,6 +28,20 @@ else
 end
 vim.opt.rtp:prepend(lazy_path)
 
-local plugins = {}
+-- Pop-up Lazy plugin manager, q - to quit
+vim.cmd("nnoremap <F3> :Lazy<CR>");
+
+-- Collecton of plugins to be loaded
+local plugins = {
+        {"catppuccin/nvim", name = "catppuccin", priority = 1000}
+}
 local opts = {}
 require("lazy").setup(plugins, opts)
+
+require("catppuccin").setup({
+--    flavour = "latte", -- latte, frappe, macchiato, mocha
+--    flavour = "frappe",
+--    flavour = "macchiato",
+      flavour = "mocha"
+})
+vim.cmd.colorscheme "catppuccin"
