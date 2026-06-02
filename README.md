@@ -11,5 +11,6 @@
 # Setup 
 ```
 sudo apt update \
- && sudo apt install -y nvim
+ && sudo apt install -y neovim \
+                        ripgrep
 ```
