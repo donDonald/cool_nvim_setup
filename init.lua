@@ -34,14 +34,30 @@ vim.cmd("nnoremap <F3> :Lazy<CR>");
 
 -- Collecton of plugins to be loaded
 local plugins = {
-        {"catppuccin/nvim", name = "catppuccin", priority = 1000}, -- Coloar scheme plugin
-        { -- Telescopte - fuzzy search tool
-                'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        {
+                -- color scheme plugin
+                "catppuccin/nvim", 
+                name = "catppuccin", 
+                priority = 1000
+        },
+        { 
+                -- find and grep search tool
+                'nvim-telescope/telescope.nvim', 
+                tag = '0.1.8',
                 dependencies = {'nvim-lua/plenary.nvim'}
+        },
+        {
+                -- text highlighting tool
+                "nvim-treesitter/nvim-treesitter",
+                tag = 'v0.9.3',
+                build = ":TSUpdate"
         }
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
+
+
+
 
 -- Select desired color scheme here
 require("catppuccin").setup({
@@ -55,6 +71,7 @@ vim.cmd.colorscheme "catppuccin"
 
 
 
+-- Setup telescope - find and grep tool
 -- Have to install ripgrep onto host
 -- sudo apt install ripgrep
 local builtin = require("telescope.builtin")
@@ -65,3 +82,29 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, {})
 
 vim.keymap.set('n', '<F5>', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
+
+
+
+
+-- Setup treesitter - text highlighting tool
+-- local config = require("nvim-treesitter.config")
+local config = require("nvim-treesitter.configs")
+config.setup({
+        ensure_installed = {
+                "bash",
+                "lua",
+                "python",
+                "php",
+                "c",
+                "cpp",
+                "yaml",
+                "typescript",
+                "json",
+                "javascript",
+                "html",
+                "dockerfile",
+                "cmake",
+        },
+        highlight = { enable = true },
+        indent = { enable = true }
+})
