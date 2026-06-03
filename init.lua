@@ -51,6 +51,16 @@ local plugins = {
                 "nvim-treesitter/nvim-treesitter",
                 tag = 'v0.9.3',
                 build = ":TSUpdate"
+        },
+        {
+                "nvim-neo-tree/neo-tree.nvim",
+                branch = "v3.x",
+                dependencies = {
+                        "nvim-lua/plenary.nvim",
+                        "MunifTanjim/nui.nvim",
+                        "nvim-tree/nvim-web-devicons", -- optional, but recommended
+                },
+                lazy = false, -- neo-tree will lazily load itself
         }
 }
 local opts = {}
@@ -108,3 +118,10 @@ config.setup({
         highlight = { enable = true },
         indent = { enable = true }
 })
+
+
+
+-- Setup neo-tree - fs tree tool
+vim.keymap.set('n', '<F6>', ":Neotree filesystem reveal left<CR>")
+vim.keymap.set('n', '<C-t>', ":Neotree filesystem reveal left<CR>")
+vim.keymap.set('n', '<leader>t', ":Neotree filesystem reveal left<CR>")
