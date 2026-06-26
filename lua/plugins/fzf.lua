@@ -13,6 +13,7 @@ return {
                         { "<leader>fh", "<cmd>FzfLua help_tags<cr>", desc = "Help Tags" },
                         { "<leader>fr", "<cmd>FzfLua oldfiles<cr>", desc = "Recent Files" },
                         { "<leader>h", "<cmd>FzfLua oldfiles<cr>", desc = "Recent Files" },
+                        { "<F4>", "<cmd>FzfLua oldfiles<cr>", desc = "Recent Files" },
                 },
                 opts = function()
                     local config = require("fzf-lua.config")
