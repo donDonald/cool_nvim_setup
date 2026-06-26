@@ -12,5 +12,6 @@
 ```
 sudo apt update \
  && sudo apt install -y neovim \
-                        ripgrep
+                        ripgrep \
+                        fzf
 ```
