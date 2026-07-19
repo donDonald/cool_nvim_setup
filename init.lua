@@ -19,7 +19,7 @@ end
 vim.opt.rtp:prepend(lazy_path)
 
 -- Pop-up Lazy plugin manager, q - to quit
-vim.cmd("nnoremap <F3> :Lazy<CR>");
+vim.cmd("nnoremap <F2> :Lazy<CR>");
 
 -- Collecton of plugins to be loaded
 require("lazy").setup("plugins")

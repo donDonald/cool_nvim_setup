@@ -10,4 +10,4 @@ vim.g.mapleader = " "
 -- Setup line numbering
 vim.cmd("set number relativenumber");
 vim.cmd("set listchars=tab:>─,space:·");
-vim.cmd("nnoremap <F2> :set list!<CR>");
+vim.cmd("nnoremap <leader>i :set list!<CR>");

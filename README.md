@@ -56,7 +56,7 @@ nvim
 Omce started for the 1st time neovim will install all plugins.\
 Lazy plugin manager will popup.\
 ***q*** to quit Lazy. \
-***F3*** to popup Lazy back.
+***F2*** to popup Lazy back.
 
 <div align="center"><img width="50%" src="images/Lazy.0.png"></div>
 <div align="center"><img width="50%" src="images/Lazy.1.png"></div>
@@ -72,3 +72,27 @@ To cleanup neovin plugins setup:
 rm -rf ~/.local/share/nvim/lazy/
 rm -rf ~/.config/nvim
 ```
+
+
+
+
+# Hot keys
+
+## Help
+* F1 - toggle help popup with basic hot-keys(TOBEDONE)
+
+## Plugins management
+* F2 - toggle Lazy plugin manager
+
+## File tree view
+* <leader>t, <C-t> - show tree view, jump inside this one.
+* <leader>tt - hide tree view.
+
+## Find and grep tools
+* F3, <leader>h - show navigation history
+* F4, <leader>f - find file by name
+* F5, <leader>g - grep actual folder
+
+## Others
+* <C-z> - swith to parent/background
+* fg<CR> - get back to nvin
