@@ -43,6 +43,7 @@ sudo apt update \
 
 
 
+
 # Clone actual setup
 Clone this repository into user home folder:
 ```
@@ -77,22 +78,5 @@ rm -rf ~/.config/nvim
 
 
 # Hot keys
-
-## Help
-* F1 - toggle help popup with basic hot-keys(TOBEDONE)
-
-## Plugins management
-* F2 - toggle Lazy plugin manager
-
-## File tree view
-* <leader>t, <C-t> - show tree view, jump inside this one.
-* <leader>tt - hide tree view.
-
-## Find and grep tools
-* F3, <leader>h - show navigation history
-* F4, <leader>f - find file by name
-* F5, <leader>g - grep actual folder
-
-## Others
-* <C-z> - swith to parent/background
-* fg<CR> - get back to nvin
+Check out [hotkeys](HOTKEYS.md).\
+Or simply ***F1*** to toggle help popup.
