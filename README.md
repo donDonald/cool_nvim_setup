@@ -59,13 +59,13 @@ Lazy plugin manager will popup.\
 ***q*** to quit Lazy. \
 ***F2*** to popup Lazy back.
 
-<div align="center"><img width="50%" src="images/Lazy.0.png"></div>
-<div align="center"><img width="50%" src="images/Lazy.1.png"></div>
+<div align="center"><img width="70%" src="images/Lazy.0.png"></div>
+<div align="center"><img width="70%" src="images/Lazy.1.png"></div>
 
 ***Ctrl+t*** to show tree view.\
 Than simply navigate to any file and hit Enter.
-<div align="center"><img width="50%" src="images/Lazy.2.png"></div>
-<div align="center"><img width="50%" src="images/Lazy.3.png"></div>
+<div align="center"><img width="70%" src="images/Lazy.2.png"></div>
+<div align="center"><img width="70%" src="images/Lazy.3.png"></div>
 
 
 To cleanup neovin plugins setup:
@@ -80,3 +80,4 @@ rm -rf ~/.config/nvim
 # Hot keys
 Check out [hotkeys](HOTKEYS.md).\
 Or simply ***F1*** to toggle help popup.
+<div align="center"><img width="70%" src="images/Lazy.4.png"></div>
