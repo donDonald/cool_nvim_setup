@@ -42,6 +42,10 @@ Once inside tree view:
 * <C-z> - swith to parent/background
 * fg<CR> - get back to nvim
 
+## Copy-paste between nvim and host
+* leader<c> - copy actual visual selection to buffer
+* leader<p> - paste content of selectin buffer
+
 ## Panes
 
 ### Panes navigaton
