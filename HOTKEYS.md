@@ -2,6 +2,10 @@
 <leader> - space bar to make it convenient for both hands
 
 ## How to quit or write changes
+* F12 - Close nvim, save changes
+* F11 - Close nvim, loose unsaved changes
+
+Or manually.\
 1st go to command mode with ***:***
 * w - write all changes
 * wqa! - write all changes and quit

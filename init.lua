@@ -1,6 +1,7 @@
 -- Setup very basic options like identations, etc.
 require("basic-options")
 require("copy-paste")
+require("quit")
 
 -- Install lazy plugin manager
 local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
