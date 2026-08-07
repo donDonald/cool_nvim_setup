@@ -48,7 +48,10 @@ Once inside tree view:
 
 ## Copy-paste between nvim and host
 * leader<c> - copy actual visual selection to buffer
-* leader<p> - paste content of selectin buffer
+* leader<v> - paste content of selectin buffer
+
+## Commentaries
+* leader</> - toggle commentaries on/off
 
 ## Panes
 

@@ -14,6 +14,7 @@ The whole idea is to gather all next features:
 * find like functionaliry
 * editor features
   * identation
+  * commentaries
   * highlighting
   * copy-pasting nvim <-> host
 * Language Server Protocol
