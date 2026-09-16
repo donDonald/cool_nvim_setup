@@ -31,10 +31,21 @@ Install neovim itself and some mandatory packages:
 ```
 sudo apt update \
  && sudo apt install -y neovim \
-                        ripgrep \
-                        fzf
+                        ripgrep
 ```
 
+## Install proper version of fzf
+To make features like history working have to install proper version of fzf.\
+Latest recommended version is 0.52.1.\
+Still newer version shall be good.
+```
+sudo apt purge fzf
+cd ~/Downloads/
+wget https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-linux_amd64.tar.gz
+sudo tar -xvf fzf-0.74.4-linux_amd64.tar.gz -C /usr/local/bin/
+```
+
+## Install Treesitter
 Neovim plugins (especially Treesitter) require a compiler to build syntax highlighting parsers.\
 Install this ones.
 ```

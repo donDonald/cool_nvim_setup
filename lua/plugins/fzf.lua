@@ -33,9 +33,20 @@ return {
                                             vertical = "down:45%",
                                     },
                             },
+
                             -- Setup defaults for find files
                             files = {
                                     formatter = "path.filename_first", -- Highlights filename before path
+                            },
+
+                            -- Enable history for oldfiles
+                            -- fzf shall have 
+                            -- :!fzf --version in Neovim. fzf-lua recommends version >= 0.52.1, and history handling has improved in newer versions
+                            oldfiles = {
+                                    include_current_session = true, -- Shows files opened in this Neovim session
+                                    fzf_opts = {
+                                            ["--history"] = vim.fn.stdpath("data") .. "/fzf-lua-oldfiles-history",
+                                    },
                             },
                     }
                 end,
