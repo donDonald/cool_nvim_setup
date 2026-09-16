@@ -41,17 +41,18 @@ Once inside tree view:
 
 ## Identations and formatting
 * <leader>i - toggle spaces and tabs visibility
+* <leader>o - toggle betwenn noarmal and weird identation rules specific for old projects
 
 ## Toggling to command line and back
 * <C-z> - swith to parent/background
 * fg<CR> - get back to nvim
 
 ## Copy-paste between nvim and host
-* leader<c> - copy actual visual selection to buffer
-* leader<v> - paste content of selectin buffer
+* <leader>c - copy actual visual selection to buffer
+* <leader>v - paste content of selectin buffer
 
 ## Commentaries
-* leader</> - toggle commentaries on/off
+* <leader>/ - toggle commentaries on/off
 
 ## Panes
 
