@@ -1,6 +1,9 @@
 # Hot keys
 <leader> - space bar to make it convenient for both hands
 
+## Help
+* F1 - toggle help popup visibility
+
 ## How to quit or write changes
 * F12 - Close nvim, save changes
 * F11 - Close nvim, loose unsaved changes
@@ -10,9 +13,6 @@ Or manually.\
 * w - write all changes
 * wqa! - write all changes and quit
 * qa! - discard all changes and quit
-
-## Help
-* F1 - toggle help popup visibility
 
 ## Plugins management
 * F2 - toggle Lazy plugin manager visibility
@@ -28,11 +28,14 @@ Once inside tree view:
 * r - to rename acually selected file/folder
 
 ## Find and grep tools
+Here 2 options available - Telescope and Fzf.
+
+### Telescope
 * F3, <leader>h - show navigation history
 * F4, <leader>f - find file by name
 * F5, <leader>g - grep actual folder
 
-## FZF
+### FZF
 * <leader>ff - Find files with FZF
 * <leader>fg - Grep with FZF
 * <leader>fb - Show buffers with FZF

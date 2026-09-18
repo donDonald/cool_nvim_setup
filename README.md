@@ -10,8 +10,8 @@ Cool [Neovim](https://neovim.io) setup.\
 The whole idea is to gather all next features:
 * File system tree view
 * File browsing history
-* grep like functionaliry
-* find like functionaliry
+* grep like functionaliry (Telescope and Fzf)
+* find like functionaliry (Telescope and Fzf)
 * editor features
   * identation
   * commentaries
@@ -27,12 +27,42 @@ The whole idea is to gather all next features:
 
 
 # Setup 
-Install neovim itself and some mandatory packages:
 ```
 sudo apt update \
- && sudo apt install -y neovim \
-                        ripgrep
+ && sudo apt install -y ripgrep
 ```
+
+> [!WARNING]
+> Versions of is very important to get things working.
+> neovim - v0.11.6
+
+
+
+
+
+## Install proper version of neovin 0.11.6
+```
+mkdir -p ~/Download/tbr.neovimsetup
+cd ~/Download/tbr.neovimsetup
+wget https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz .
+tar xzvf ./nvim-linux-x86_64.tar.gz
+sudo cp -rf ./nvim-linux-x86_64/* /usr/local
+```
+That it!\
+Double check neovim version:
+```
+nvim --version
+```
+shall be this:
+```
+NVIM v0.11.6
+Build type: Release
+LuaJIT 2.1.1741730670
+Run "nvim -V1 -v" for more info
+```
+
+
+
 
 ## Install proper version of fzf
 To make features like history working have to install proper version of fzf.\
@@ -44,6 +74,9 @@ cd ~/Downloads/
 wget https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-linux_amd64.tar.gz
 sudo tar -xvf fzf-0.74.4-linux_amd64.tar.gz -C /usr/local/bin/
 ```
+
+
+
 
 ## Install Treesitter
 Neovim plugins (especially Treesitter) require a compiler to build syntax highlighting parsers.\
