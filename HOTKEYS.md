@@ -57,6 +57,14 @@ Here 2 options available - Telescope and Fzf.
 ## Commentaries
 * <leader>/ - toggle commentaries on/off
 
+## Version Control Systems
+
+### Lazygit
+* <leader>lg - Open up Lazygit
+* <leader>ll - Open up Lazygit commit log
+* <leader>ll - Open up Lazygit filter tool
+q - to quit Lazygit popup
+
 ## Panes
 
 ### Panes navigaton
