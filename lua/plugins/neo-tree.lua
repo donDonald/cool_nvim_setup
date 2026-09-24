@@ -9,8 +9,8 @@ return {
         },
         lazy = false, -- neo-tree will lazily load itself
         config = function()
-                vim.keymap.set('n', '<C-t>', ":Neotree filesystem reveal left<CR>")
-                vim.keymap.set('n', '<leader>t', ":Neotree filesystem reveal left<CR>")
-                vim.keymap.set('n', '<leader>tt', ":Neotree filesystem close<CR>")
+                vim.keymap.set('n', '<C-e>', ":Neotree filesystem reveal left<CR>")
+                vim.keymap.set('n', '<leader>e', ":Neotree filesystem reveal left<CR>")
+                vim.keymap.set('n', '<leader>ee', ":Neotree filesystem close<CR>")
         end
 }

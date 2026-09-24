@@ -18,8 +18,8 @@ Or manually.\
 * F2 - toggle Lazy plugin manager visibility
 
 ## File tree view
-* <leader>t, <Ctrl-t> - show tree view, jump inside this one
-* <leader>tt - hide tree view
+* <leader>e, <Ctrl-e> - show tree view, jump inside this one
+* <leader>ee - hide tree view
 
 Once inside tree view:
 * Shift-h - toggle hidden files/folders visibility
@@ -64,6 +64,12 @@ Here 2 options available - Telescope and Fzf.
 * <leader>lh - Show git commit log
 * <leader>lf - Show Lazygit Filter Tool
 q - to quit Lazygit popup
+
+### Tig
+* <leader>tt - Open up Tig commit log
+* <leader>ts - Show git status
+* <leader>tb - Show git blame
+q - to quit Tig popup
 
 ## Panes
 

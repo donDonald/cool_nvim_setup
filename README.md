@@ -117,6 +117,17 @@ Chack [Lazygit](https://github.com/jesseduffield/lazygit/blob/master/README.md) 
 
 
 
+
+## Install Tig
+Tig is a git tool and has to be installed 1st.\
+Then it's integrated into neovim via tig-explorer plugin.
+```
+sudo apt install tig
+```
+
+
+
+
 # Clone actual setup
 Clone this repository into user home folder:
 ```
