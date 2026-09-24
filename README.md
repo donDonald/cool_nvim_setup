@@ -127,6 +127,11 @@ sudo apt install tig
 
 
 
+LSP
+sudo apt install python3-venv
+
+
+
 
 # Clone actual setup
 Clone this repository into user home folder:
