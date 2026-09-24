@@ -10,18 +10,28 @@ Cool [Neovim](https://neovim.io) setup.\
 The whole idea is to gather all next features:
 * File system tree view
 * File browsing history
-* grep like functionaliry (Telescope and Fzf)
-* find like functionaliry (Telescope and Fzf)
+* grep like functionaliry (with Telescope and Fzf)
+* find like functionaliry (with Telescope and Fzf)
 * editor features
   * identation
   * commentaries
   * highlighting
   * copy-pasting nvim <-> host
+* Version Control Systems
+  * git (with Lazygit)
 * Language Server Protocol
   * bash
   * python
   * C/C++
   * JS
+
+
+
+
+# Hot keys
+Check out [hotkeys](HOTKEYS.md).\
+Or simply ***F1*** to toggle help popup.
+<div align="center"><img width="70%" src="images/Lazy.4.png"></div>
 
 
 
@@ -89,6 +99,24 @@ sudo apt update \
 
 
 
+# Version Control Systems
+
+
+
+
+## Install Lazygit
+Lazygit is a powerful git tool and has to be installed 1st.\
+Then it's integrated into neovim via lazy-git plugin.
+```
+mkdir -p ~/Download/tbr.neovimsetup
+cd ~/Download/tbr.neovimsetup
+wget https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz
+sudo tar -xvf lazygit_0.65.1_linux_x86_64.tar.gz -C /usr/local/bin/
+```
+Chack [Lazygit](https://github.com/jesseduffield/lazygit/blob/master/README.md) for more details.
+
+
+
 # Clone actual setup
 Clone this repository into user home folder:
 ```
@@ -118,11 +146,3 @@ To cleanup neovin plugins setup:
 rm -rf ~/.local/share/nvim/lazy/
 rm -rf ~/.config/nvim
 ```
-
-
-
-
-# Hot keys
-Check out [hotkeys](HOTKEYS.md).\
-Or simply ***F1*** to toggle help popup.
-<div align="center"><img width="70%" src="images/Lazy.4.png"></div>
