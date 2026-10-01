@@ -1,3 +1,4 @@
+-- Setup indentation
 -- Expand TABs to spaces.
 -- Indents will have a width of 8.
 -- Sets the number of columns for a TAB.
