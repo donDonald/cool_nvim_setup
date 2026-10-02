@@ -157,3 +157,28 @@ To cleanup neovin plugins setup:
 rm -rf ~/.local/share/nvim/lazy/
 rm -rf ~/.config/nvim
 ```
+
+
+
+Options:
+* basedpyright, ruff
+* pyrefly для LSP и Рафф для форматирования
+*
+
+
+Error:
+```
+lazy already installed, check your ~/.local/share/nvim/lazy/
+Error detected while processing BufReadPost Autocommands for "*":
+Error executing lua callback: /usr/local/share/nvim/runtime/filetype.lua:36: BufReadPost Autocommands for "*"..FileType Autocommands for "python": Vim(append):Cannot find any fd binary on your sys
+tem. If it is installed under a different name, set options.fd_binary_name.
+stack traceback:
+        [C]: in function '_with'
+        /usr/local/share/nvim/runtime/filetype.lua:35: in function </usr/local/share/nvim/runtime/filetype.lua:10>
+
+```
+Have to install fd binary(find tool - kinda standard find tool):
+```
+sudo apt install fd-find
+```
+
