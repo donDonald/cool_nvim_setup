@@ -130,6 +130,21 @@ sudo apt install tig
 
 
 
+# LSP (language server protocol)
+
+
+
+
+## Rust
+```
+sudo snap --classic install rustup
+rustup default stable
+rustup component add rust-analyzer
+```
+
+
+
+
 # Clone actual setup
 Clone this repository into user home folder:
 ```
