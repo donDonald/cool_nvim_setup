@@ -12,24 +12,26 @@ The whole idea is to gather all next features:
 * File browsing history
 * grep like functionaliry (with Telescope and Fzf)
 * find like functionaliry (with Telescope and Fzf)
+* bookmarks
 * editor features
   * identation
   * commentaries
   * highlighting
   * copy-pasting nvim <-> host
 * Version Control Systems
-  * git (with Lazygit)
+  * git (with Lazygit and tig)
 * Language Server Protocol
-  * bash
-  * python
-  * C/C++
-  * JS
+  * bash(TOBEDONE)
+  * python(TOBEDONE)
+  * C/C++(TOBEDONE)
+  * JS(TOBEDONE)
+  * Rust(TOBEDONE)
 
 
 
 
 # Hot keys
-Check out [hotkeys](HOTKEYS.md).\
+Check out [hotkeys](.HOTKEYS.md).\
 Or simply ***F1*** to toggle help popup.
 <div align="center"><img width="70%" src="images/Lazy.4.png"></div>
 
