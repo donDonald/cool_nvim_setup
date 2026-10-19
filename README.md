@@ -135,12 +135,21 @@ sudo apt install tig
 
 
 
-## Rust
-Install Rust:
+## Rust LSP
+Install Rust toolchain:
 ```
 sudo snap install rustup --classic
 rustup default stable
 rustup component add rust-analyzer
+```
+
+
+
+
+## C/C++ LSP
+Install C/C++ toolchain:
+```
+sudo apt install clangd bear cmake build-essential
 ```
 
 
