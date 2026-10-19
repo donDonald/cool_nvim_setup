@@ -10,6 +10,9 @@ echo "neovim:$(nvim --version | head -1)" >> "$INFO"
 echo "fzf:$(fzf --version)" >> "$INFO"
 echo "lazygit:$(lazygit --version)" >> "$INFO"
 echo "tig:$(tig --version | head -1)" >> "$INFO"
+echo "rustup:$(rustup --version | head -1)" >> "$INFO"
+echo "rustc:$(rustc --version | head -1)" >> "$INFO"
+echo "rust-analyzer:$(rust-analyzer --version | head -1)" >> "$INFO"
 echo >> "$INFO"
 
 cat "$INFO" "$HOTKEYS_TEMPLATE" > "$HOTKEYS_TMP" \

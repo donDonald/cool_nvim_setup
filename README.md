@@ -20,12 +20,11 @@ The whole idea is to gather all next features:
   * copy-pasting nvim <-> host
 * Version Control Systems
   * git (with Lazygit and tig)
-* Language Server Protocol
-  * bash(TOBEDONE)
+* LSDP(Language Server Protocol)
   * python(TOBEDONE)
   * C/C++(TOBEDONE)
   * JS(TOBEDONE)
-  * Rust(TOBEDONE)
+  * Rust
 
 
 
@@ -125,6 +124,22 @@ Tig is a git tool and has to be installed 1st.\
 Then it's integrated into neovim via tig-explorer plugin.
 ```
 sudo apt install tig
+```
+
+
+
+
+# LSP (Language Server Protocol)
+
+
+
+
+## Rust
+Install Rust:
+```
+sudo snap install rustup --classic
+rustup default stable
+rustup component add rust-analyzer
 ```
 
 
