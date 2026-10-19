@@ -10,10 +10,11 @@ Cool [Neovim](https://neovim.io) setup.\
 The whole idea is to gather all next features:
 * File system tree view
 * File browsing history
-* grep like functionaliry (with Telescope and Fzf)
-* find like functionaliry (with Telescope and Fzf)
-* bookmarks
-* editor features
+* Grep like functionaliry (with Telescope and Fzf)
+* Find like functionaliry (with Telescope and Fzf)
+* Bookmarks
+* Auto-completion
+* Editor features
   * identation
   * commentaries
   * highlighting
