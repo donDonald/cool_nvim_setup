@@ -21,11 +21,11 @@ The whole idea is to gather all next features:
   * copy-pasting nvim <-> host
 * Version Control Systems
   * git (with Lazygit and tig)
-* LSDP(Language Server Protocol)
-  * python(TOBEDONE)
+* LSP(Language Server Protocol)
+  * Python
+  * Rust
   * C/C++(TOBEDONE)
   * JS(TOBEDONE)
-  * Rust
 
 
 
@@ -135,13 +135,30 @@ sudo apt install tig
 
 
 
-## Rust
+## Python LSP
+Install system wide packages:
+```
+sudo apt install fd-find
+```
+> [!NOTE]
+> To get LSP workinbg install project specific(venv) packages:
+```
+. .venv/bin/activate
+pip install basedpyright ruff
+```
+
+
+
+
+## Rust LSP
 Install Rust:
 ```
 sudo snap install rustup --classic
 rustup default stable
 rustup component add rust-analyzer
 ```
+This shall be enough.\
+LSP will be initialized only inside a Cargo project folder.
 
 
 

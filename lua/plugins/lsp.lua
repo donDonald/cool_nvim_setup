@@ -2,29 +2,8 @@ return {
         "neovim/nvim-lspconfig",
         lazy = false,
         config = function()
-                vim.lsp.config('rust_analyzer', {
-                        settings = { 
-                                ['rust-analyzer'] = {
-                                        -- Example: Use clippy on save
-                                        --[[ checkOnSave = {
-                                                command = 'clippy',
-                                        }, ]]
-                                        -- Example: Enable inlay hints
-                                        inlayHints = {
-                                                bindingModeHints = {
-                                                        enable = true,
-                                                },
-                                                closureReturnTypeHints = {
-                                                        enable = 'always',
-                                                },
-                                        },
-                                        -- You can add any rust-analyzer config options here.
-                                        -- See: https://rust-analyzer.github.io/manual.html#configuration
-                                } 
-                        } 
-                })
-                vim.lsp.enable('rust_analyzer')
 
+                -- Generic hotkeys
                 vim.api.nvim_create_autocmd('LspAttach', {
                         callback = function(args)
                                 local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -85,5 +64,56 @@ return {
                                 source = "always",
                         },
                 })
-        end,
+
+                -- Rust setup
+                vim.lsp.config('rust_analyzer', {
+                        settings = { 
+                                ['rust-analyzer'] = {
+                                        -- Example: Use clippy on save
+                                        --[[ checkOnSave = {
+                                                command = 'clippy',
+                                        }, ]]
+                                        -- Example: Enable inlay hints
+                                        inlayHints = {
+                                                bindingModeHints = {
+                                                        enable = true,
+                                                },
+                                                closureReturnTypeHints = {
+                                                        enable = 'always',
+                                                },
+                                        },
+                                        -- You can add any rust-analyzer config options here.
+                                        -- See: https://rust-analyzer.github.io/manual.html#configuration
+                                } 
+                        } 
+                })
+                vim.lsp.enable('rust_analyzer')
+
+                -- Python setup
+                -- basedpyright
+                local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+                vim.lsp.config("basedpyright", {
+                        capabilities = capabilities,  -- key point
+                        settings = {
+                                basedpyright = {
+                                        analysis = {
+                                                typeCheckingMode = "standard",
+                                        },
+                                },
+                                python = {
+                                        -- Disable import organization to avoid conflict with ruff
+                                        disableOrganizeImports = true,
+                                },
+                        },
+                })
+                vim.lsp.enable("basedpyright")
+
+                -- ruff
+                vim.lsp.config("ruff", {
+                        capabilities = capabilities, -- Must add
+                        -- ruff defaults usually suffice; just enable it
+                })
+                vim.lsp.enable("ruff")
+        end
 }
