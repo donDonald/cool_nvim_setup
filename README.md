@@ -39,20 +39,15 @@ Or simply ***F1*** to toggle help popup.
 
 
 # Setup 
-```
-sudo apt update \
- && sudo apt install -y ripgrep
-```
-
-> [!WARNING]
-> Versions of is very important to get things working.
-> neovim - v0.11.6
-
 
 
 
 
 ## Install proper version of neovin 0.11.6
+> [!WARNING]
+> Versions of is very important to get things working.
+> neovim - v0.11.6
+
 ```
 mkdir -p ~/Download/tbr.neovimsetup
 cd ~/Download/tbr.neovimsetup
@@ -74,6 +69,23 @@ Run "nvim -V1 -v" for more info
 ```
 
 
+## Install system clip-board utility
+If upon copy-pasting from nvim to host you get an error ***clipboard: no provider*** comes up than system clip-board utility has to be installed.\
+For Wayland:
+```
+sudo apt install wl-clipboard
+```
+
+For X11:
+```
+sudo apt install xclip
+```
+or:
+```
+sudo apt install xsel
+```
+
+
 
 
 ## Install proper version of fzf
@@ -85,6 +97,12 @@ sudo apt purge fzf
 cd ~/Downloads/
 wget https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-linux_amd64.tar.gz
 sudo tar -xvf fzf-0.74.4-linux_amd64.tar.gz -C /usr/local/bin/
+```
+
+Install ripgrep:
+```
+sudo apt update \
+ && sudo apt install -y ripgrep
 ```
 
 
@@ -141,11 +159,12 @@ Install system wide packages:
 sudo apt install fd-find
 ```
 > [!NOTE]
-> To get LSP workinbg install project specific(venv) packages:
+> To get LSP working install project specific(venv) packages:
 ```
 . .venv/bin/activate
 pip install basedpyright ruff
 ```
+If here is no venv install these tool globally.
 
 
 
