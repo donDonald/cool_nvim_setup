@@ -1,5 +1,6 @@
 return {
         'iberianpig/tig-explorer.vim',
+        pin = true, -- Lock actual plugin version
         dependencies = { 'rbgrouleff/bclose.vim' },
         init = function()
                 -- Customize internal Tig keymaps

@@ -5,6 +5,7 @@
 return { 
         -- find and grep search tool
         'nvim-telescope/telescope.nvim', 
+        pin = true, -- Lock actual plugin version
         tag = '0.1.8',
         dependencies = {'nvim-lua/plenary.nvim'},
         config = function()

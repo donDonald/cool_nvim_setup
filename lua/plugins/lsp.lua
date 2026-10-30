@@ -1,5 +1,6 @@
 return {
         "neovim/nvim-lspconfig",
+        pin = true, -- Lock actual plugin version
         lazy = false,
         config = function()
 

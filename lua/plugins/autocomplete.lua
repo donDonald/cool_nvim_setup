@@ -1,5 +1,6 @@
 return {
         "hrsh7th/nvim-cmp",
+        pin = true, -- Lock actual plugin version
         dependencies = {
                 "hrsh7th/cmp-nvim-lsp", -- LSP source
                 "hrsh7th/cmp-buffer",   -- Buffer words source

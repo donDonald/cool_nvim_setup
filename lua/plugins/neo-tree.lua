@@ -1,6 +1,7 @@
 -- Setup neo-tree - fs tree tool
 return {
         "nvim-neo-tree/neo-tree.nvim",
+        pin = true, -- Lock actual plugin version
         branch = "v3.x",
         dependencies = {
                 "nvim-lua/plenary.nvim",

@@ -1,6 +1,7 @@
 -- Install actual line status
 return {
         "nvim-lualine/lualine.nvim",
+        pin = true, -- Lock actual plugin version
         config = function()
                 require("lualine").setup({
                         options = {

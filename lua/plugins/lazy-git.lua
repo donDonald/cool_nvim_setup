@@ -1,5 +1,6 @@
 return {
         "kdheepak/lazygit.nvim",
+        pin = true, -- Lock actual plugin version
         lazy = true,
         cmd = {
                 "LazyGit",
