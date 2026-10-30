@@ -69,6 +69,28 @@ Run "nvim -V1 -v" for more info
 ```
 
 
+
+
+### Managing plugins versions
+> [!WARNING]
+> Stable work of this setup depends on how well plugins are fitting all together.
+
+Therefor plugin versions shall be ***freezed*** to mark tested and well working versions.\
+Here is file ***lazy-lock.json***.\
+This file contains the exact commit SHAs for every plugin.
+
+Use ***:Lazy restore*** to enforce the freeze.\
+When you want to ensure your current Neovim instance matches the versions recorded in your ***lazy-lock.json*** (for example, after cloning your config to a new machine or if a plugin updated unintentionally), run:
+```
+:Lazy restore
+```
+This command reads ***lazy-lock.json*** and checks out every plugin to the exact commit listed there, ignoring any newer versions.\
+This command does not update ***lazy-lock.json***.\
+It only changes your installed plugins to match it.
+
+
+
+
 ## Install system clip-board utility
 If upon copy-pasting from nvim to host you get an error ***clipboard: no provider*** comes up than system clip-board utility has to be installed.\
 For Wayland:
