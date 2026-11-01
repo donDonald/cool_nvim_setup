@@ -176,12 +176,19 @@ sudo apt install tig
 
 
 ## Python LSP
+Install ***python*** itself and venv tool:
+```
+sudo apt update \
+ && sudo apt install -y python3 python3-pip python3-venv
+```
+
 Install system wide packages:
 ```
 sudo apt install fd-find
 ```
+
 > [!NOTE]
-> To get LSP working install project specific(venv) packages:
+> To get LSP working install basedpyright and ruff rignt into project specific(venv) folder:
 ```
 . .venv/bin/activate
 pip install basedpyright ruff
