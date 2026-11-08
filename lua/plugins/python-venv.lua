@@ -1,6 +1,7 @@
 -- Setup python venv loading
 return {
         "tnfru/nvim-venv-detector",
+        pin = true, -- Lock actual plugin version
         event = "VimEnter",
         config = function()
                 require("venv_detector").setup()

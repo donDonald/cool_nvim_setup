@@ -1,6 +1,7 @@
 return {
         -- color scheme plugin
         "catppuccin/nvim", 
+        pin = true, -- Lock actual plugin version
         name = "catppuccin", 
         priority = 1000,
         config = function()

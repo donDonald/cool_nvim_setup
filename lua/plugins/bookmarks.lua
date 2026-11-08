@@ -1,5 +1,6 @@
 return {
         "tomasky/bookmarks.nvim",
+        pin = true, -- Lock actual plugin version
         -- Lazy load on these keymaps
         keys = {
                 { "<leader>bi", desc = "Get bookmarks info" },

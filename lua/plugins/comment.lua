@@ -1,6 +1,7 @@
 return {
         -- color scheme plugin
         "numToStr/Comment.nvim",
+        pin = true, -- Lock actual plugin version
         opts = {
                 ---Add a space b/w comment and the line
                 padding = true,
