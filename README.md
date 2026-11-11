@@ -212,9 +212,24 @@ LSP will be initialized only inside a Cargo project folder.
 
 
 ## C/C++ LSP
+To get accurate results (and avoid false errors in Neovim), clangd needs to know your project's build flags.\
+It looks for a file named compile_commands.json.
+
+* If you use CMake: Generate it by running cmake -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON. You can then symlink or copy build/compile_commands.json to your project root.
+* If you use Make: Install bear (sudo apt install bear) and run your build with bear -- make
+
+Will be using ***clangd*** LSP server.\
+Install ***clangd*** LSP server:
+```
+sudo apt install clangd bear
+```
+
+> [!NOTE]
+> C/C++ shal be installed, other-wise howcome LSP server can find standard libraries and other tools.
+
 Install C/C++ toolchain:
 ```
-sudo apt install clangd bear cmake build-essential
+sudo apt install cmake build-essential libgtest-dev 
 ```
 
 
