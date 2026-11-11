@@ -115,6 +115,33 @@ return {
                         capabilities = capabilities, -- Must add
                         -- ruff defaults usually suffice; just enable it
                 })
+
                 vim.lsp.enable("ruff")
+
+                -- Configure clangd using native vim.lsp.config
+                vim.lsp.config("clangd", {
+                        -- Ensure clangd is in your PATH. If using Mason, it's handled automatically.
+                        cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=iwyu" },
+                        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
+                        -- Root markers help Neovim find your project root.
+                        -- clangd will look for compile_commands.json or compile_flags.txt here.
+                        root_markers = {
+                                ".clangd",
+                                ".clang-tidy",
+                                ".clang-format",
+                                "compile_commands.json",
+                                "compile_flags.txt",
+                                "configure.ac",
+                                ".git",
+                        },
+                        -- Optional: clangd-specific settings
+                        init_options = {
+                                usePlaceholders = true,
+                                completeUnimported = true,
+                                clangdFileStatus = true,
+                        },
+                })
+
+                vim.lsp.enable("clangd")
         end
 }

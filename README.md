@@ -211,6 +211,15 @@ LSP will be initialized only inside a Cargo project folder.
 
 
 
+## C/C++ LSP
+Install C/C++ toolchain:
+```
+sudo apt install clangd bear cmake build-essential
+```
+
+
+
+
 # Clone actual setup
 Clone this repository into user home folder:
 ```
