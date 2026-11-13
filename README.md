@@ -12,8 +12,11 @@ The whole idea is to gather all next features:
 * File browsing history
 * Grep like functionaliry (with Telescope and Fzf)
 * Find like functionaliry (with Telescope and Fzf)
-* Bookmarks
 * Auto-completion
+* Navigation tools
+  * Bookmarks
+  * File browsing stack
+  * Back/Forward navigation
 * Editor features
   * identation
   * commentaries
